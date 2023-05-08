@@ -17,7 +17,7 @@
 	});
 
 	var typed = new Typed('#bannertyped', {
-		strings: ['inspires', 'motivates', 'sells', 'educates', 'persuades'],
+		strings: ['inspires.', 'motivates.', 'sells.', 'educates.', 'persuades.'],
 		typeSpeed: 50,
 		loop: true,
 		showCursor: true,
