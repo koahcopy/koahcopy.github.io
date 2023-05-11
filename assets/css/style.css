@@ -875,7 +875,7 @@ img {
   display: inline-block;
   position: relative;
   text-transform: uppercase;
-  font-family: "Gordita-500";
+  font-family: var(--tp-ff-subheading);
   font-size: 18px;
   color: var(--tp-heading-secondary);
   line-height: 1;

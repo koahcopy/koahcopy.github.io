@@ -20,7 +20,7 @@
    <link rel="stylesheet" href="assets/css/backtotop.css">
    <link rel="stylesheet" href="assets/css/magnific-popup.css">
    <link rel="stylesheet" href="assets/css/nice-select.css">
-   <link rel="stylesheet" href="assets/fonts/cereal/stylesheet.css">
+   <link rel="stylesheet" href="assets/fonts/brsonoma/stylesheet.css">
    <link rel="stylesheet" href="assets/css/ui-icon.css">
    <link rel="stylesheet" href="assets/css/elegentfonts.css">
    <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
@@ -48,10 +48,14 @@
       /* Tucker Overrides */
 
       :root {
-         --tp-ff-body: 'airbnbcereal_w_bkregular', sans-serif;
-         --tp-ff-p: 'airbnbcereal_w_bkregular', sans-serif;
-         --tp-ff-heading: 'airbnbcereal_w_bdbold', sans-serif;
+         --tp-ff-body: 'brsonoma-light', sans-serif;
+         --tp-ff-p: 'brsonoma-light', sans-serif;
+         --tp-ff-heading: 'brsonoma-black', sans-serif;
+         --tp-ff-subheading: 'brsonoma-bold', sans-serif;
          --tp-heading-primary: #000;
+         --tp-heading-secondary: #96c9dc;
+         --tp-theme-1: #96c9dc;
+         --tp-border-2: #fdae02;
       }
 
       .mean-container .mean-nav ul li a {
@@ -66,6 +70,22 @@
          max-width: 80%;
          display: block;
          margin: 0 auto;
+      }
+
+      .banner-shape {
+         margin-top: 200px;
+      }
+
+      .tp-bline-stitle::after {
+         display: none;
+      }
+
+      .footer-bg {
+         background: #000 !important;
+      }
+
+      .counter-b-border {
+         border-color: var(--tp-theme-1) !important;
       }
 
 
@@ -189,7 +209,7 @@
          <div class="banner-bg banner-bg-rainbow" data-background="assets/img/banner/banner-bg-2.jpg">
             <div class="container">
                <div class="row">
-                  <div class="col-xl-6 col-lg-6 col-md-8">
+                  <div class="col-xl-6 col-lg-6">
                      <div class="hero-content hero-content-black">
                         <h2 class="hero-title-black mb-45">We write copy that <div style="display: inline;" id="bannertyped"></span></h2>
                         <div class="hero-btn">
@@ -198,8 +218,8 @@
                      </div>
                   </div>
                   <div class="col-xl-6 col-lg-6">
-                     <div class="banner-shape d-none d-md-block">
-                        <img src="assets/img/marketing/1.png" alt="banner-shape" class="b-shape-3">
+                     <div class="banner-shape d-none d-lg-block">
+                        <img src="assets/img/marketing/1.png" alt="banner-shape">
                      </div>
                   </div>
                </div>
@@ -245,7 +265,7 @@
             <div class="tp-feature-cn">
                <div class="row">
                   <div class="col-xl-3 col-lg-6 col-md-6 pb-30">
-                     <div class="tpfea tp-feature-item text-center h-100 wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".4s">
+                     <div class="tpfea tp-feature-item text-center h-100 wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".4s" data-bs-toggle="modal" data-bs-target="#Modal1">
                         <div class="tpfea__icon mb-25">
                            <i class="fi fi-rr-paper-plane"></i>
                         </div>
@@ -253,9 +273,22 @@
                            <h5 class="tpfea__title mb-5">Email Marketing</h5>
                         </div>
                      </div>
+                     <div class="modal fade" id="Modal1" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h2 class="modal-title" id="exampleModalLabel">Email Marketing.</h2>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p>We create captivating email campaigns by writing persuasive and engaging copy that grabs attention, resonates with your audience, and drives desired actions.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                   </div>
                   <div class="col-xl-3 col-lg-6 col-md-6 pb-30">
-                     <div class="tpfea tp-feature-item text-center h-100 wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".6s">
+                     <div class="tpfea tp-feature-item text-center h-100 wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".6s" data-bs-toggle="modal" data-bs-target="#Modal2">
                         <div class="tpfea__icon mb-25">
                            <i class="fi fi-rr-browser"></i>
                         </div>
@@ -263,9 +296,22 @@
                            <h5 class="tpfea__title mb-5">Website Copy</h5>
                         </div>
                      </div>
+                     <div class="modal fade" id="Modal2" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h2 class="modal-title" id="exampleModalLabel">Website Copy.</h2>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p>We craft compelling website copy that engages visitors, communicates your brand's message, and appeals to search engines.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                   </div>
                   <div class="col-xl-3 col-lg-6 col-md-6 pb-30">
-                     <div class="tpfea tp-feature-item text-center h-100 wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".8s">
+                     <div class="tpfea tp-feature-item text-center h-100 wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".8s" data-bs-toggle="modal" data-bs-target="#Modal3">
                         <div class="tpfea__icon mb-25">
                            <i class="fi fi-rr-following"></i>
                         </div>
@@ -273,16 +319,42 @@
                            <h5 class="tpfea__title mb-5">Social Media Copy</h5>
                         </div>
                      </div>
+                     <div class="modal fade" id="Modal3" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h2 class="modal-title" id="exampleModalLabel">Social Media Copy.</h2>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p>Whether it’s Captions, Descriptions, Tweets, Promotions or Ad's... we've got you covered.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                   </div>
                   <div class="col-xl-3 col-lg-6 col-md-6 pb-30">
-                     <div class="tpfea tp-feature-item text-center h-100 wow fadeInUp" data-wow-duration=".8s" data-wow-delay="1s">
+                     <div class="tpfea tp-feature-item text-center h-100 wow fadeInUp" data-wow-duration=".8s" data-wow-delay="1s" data-bs-toggle="modal" data-bs-target="#Modal4">
                         <div class="tpfea__icon mb-25">
-                           <i class="fi fi-rr-print"></i>
+                           <i class="fi fi-rr-globe"></i>
                         </div>
                         <div class="tpfea__text">
-                           <h5 class="tpfea__title mb-5">Advertising Copy</h5>
+                           <h5 class="tpfea__title mb-5">SEO Blogs</h5>
                         </div>
                      </div>
+                     <div class="modal fade" id="Modal4" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h2 class="modal-title" id="exampleModalLabel">SEO Blogs.</h2>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p>Our expertly crafted blogs not only builds domain authority but also drives valuable traffic to your website, ensuring a powerful online presence.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                   </div>
                </div>
             </div>
@@ -299,9 +371,8 @@
                      <img src="assets/img/marketing/5.png" alt="about-img">
                      <div class="tp-about-class-info">
                         <ul>
-                           <li><span>235K</span>Objectives Defined</li>
-                           <li><span>4.8<i class="fi fi-ss-star"></i></span>Mega Reviews</li>
-                           <li><span>1</span>Absolute Legend</li>
+                           <li><span>120K</span>Words Written</li>
+                           <li><span>4.8<i class="fi fi-ss-star"></i></span>Reviews</li>
                         </ul>
                      </div>
                   </div>
@@ -311,7 +382,7 @@
                      <div class="section-title mb-35">
                         <span class="tp-bline-stitle mb-15">Why Choose Us</span>
                         <h2 class="tp-section-title mb-25">Benefits of Koah.</h2>
-                        <p>Dramatically supply transparent deliverables befoe backward comp internal or "organic" sources.</p>
+                        <p>Elevate your business to new heights with our exceptional copywriting services, delivering the following key benefits:</p>
                      </div>
                      <div class="tp-about-list mb-65">
                         <ul>
@@ -356,34 +427,11 @@
                      <div class="tp-testi__ava testi-ava-border d-flex align-items-center mb-20 pb-20">
                         <img src="assets/img/icon/test-avata--1.png" alt="testi-avatar">
                         <div class="tp-testi__avainfo ml-20">
-                           <h3 class="tp-testi__title tp-title-meta mt-5">Christiano Welburno</h3>
-                           <i>Objective Definer</i>
+                           <h3 class="tp-testi__title tp-title-meta mt-5">Joel Kirby</h3>
+                           <i>Fitness Instructor</i>
                         </div>
                      </div>
-                     <p>I've been writing my own copy for years, but nobody knew what the hell I was talking about. Then I got in touch with the legends at Koah. Changed my life. Mega.</p>
-                     <div class="tp-testi__rating mb-5">
-                        <i class="fi fi-ss-star"></i>
-                        <i class="fi fi-ss-star"></i>
-                        <i class="fi fi-ss-star"></i>
-                        <i class="fi fi-ss-star"></i>
-                        <i class="fi fi-rs-star"></i>
-                        <span>4.5</span>
-                     </div>
-                     <div class="testi-quote">
-                        <i class="fa-solid fa-quote-right"></i>
-                     </div>
-                  </div>
-               </div>
-               <div class="tp-test-s-item">
-                  <div class="tp-testi p-relative">
-                     <div class="tp-testi__ava testi-ava-border d-flex align-items-center mb-20 pb-20">
-                        <img src="assets/img/icon/testi-avata3-01.png" alt="testi-avatar">
-                        <div class="tp-testi__avainfo ml-20">
-                           <h3 class="tp-testi__title tp-title-meta mt-5">Mason Winters</h3>
-                           <i>YouTube Star</i>
-                        </div>
-                     </div>
-                     <p>What's up guys, it's your boy Mason here with another testimonial. Koah Copy helped script my YouTube videos, now everyone smashes the subscribe button. Peace! ✌️</p>
+                     <p>The Koah team was always responsive, open to feedback, and committed to delivering excellence. My 1 on 1 fitness program has been completely elevated as they've crafted copy that resonates with my audience whilst saving me lots of time.</p>
                      <div class="tp-testi__rating mb-5">
                         <i class="fi fi-ss-star"></i>
                         <i class="fi fi-ss-star"></i>
@@ -402,11 +450,11 @@
                      <div class="tp-testi__ava testi-ava-border d-flex align-items-center mb-20 pb-20">
                         <img src="assets/img/icon/test-avata--2.png" alt="testi-avatar">
                         <div class="tp-testi__avainfo ml-20">
-                           <h3 class="tp-testi__title tp-title-meta mt-5">Brendan Large</h3>
-                           <i>Star Wars Director</i>
+                           <h3 class="tp-testi__title tp-title-meta mt-5">Andrew Bristow</h3>
+                           <i>Marketing Executive</i>
                         </div>
                      </div>
-                     <p style="transform: scale(-1, -1);">Phosfluorescently aggregate bleeding-edge channels rather than global mindshare. Monotonectally enable enterprise wide strategi theme areas for worldwide initiatives. </p>
+                     <p>Koah Copy has been a game-changer for the business. Their exceptional copywriting skills and strategic approach have helped me attract ideal customers and achieve significant growth.</p>
                      <div class="tp-testi__rating mb-5">
                         <i class="fi fi-ss-star"></i>
                         <i class="fi fi-ss-star"></i>
